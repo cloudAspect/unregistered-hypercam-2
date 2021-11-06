@@ -2,15 +2,9 @@ package cloudAspect.hypercam2;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.inject.Inject;
-import javax.swing.*;
 
 import net.runelite.api.Client;
-import net.runelite.api.Point;
-import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
