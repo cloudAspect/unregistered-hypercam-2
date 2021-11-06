@@ -1,11 +1,11 @@
-package net.runelite.client.plugins.hypercam;
+package cloudAspect.hypercam2;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("hypercam")
-public interface HypercamConfig extends Config {
+public interface UnregisteredHypercam2Config extends Config {
 	@ConfigItem(
 			position = 1,
 			keyName = "showHyperCam",
@@ -13,6 +13,6 @@ public interface HypercamConfig extends Config {
 			description = "Displays Unregistered Hypercam 2 overlay"
 	)
 	default boolean showHyperCam() {
-		return true;
+		return false;
 	}
 }

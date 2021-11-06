@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.hypercam;
+package cloudAspect.hypercam2;
 
 import com.google.inject.Provides;
 import net.runelite.client.config.ConfigManager;
@@ -13,20 +13,20 @@ import javax.inject.Inject;
 		description = "Shows the Unregistered Hypercam 2 logo as an overlay",
 		tags = {"overlay", "meme", "fun", "cosmetic"}
 )
-public class HypercamPlugin extends Plugin {
+public class UnregisteredHypercam2Plugin extends Plugin {
 	
 	@Inject
 	private OverlayManager overlayManager;
 	
 	@Inject
-	private HypercamOverlay overlay;
+	private UnregisteredHypercam2Overlay overlay;
 	
 	@Inject
-	private HypercamConfig config;
+	private UnregisteredHypercam2Config config;
 	
 	@Provides
-	HypercamConfig provideConfig(ConfigManager configManager) {
-		return configManager.getConfig(HypercamConfig.class);
+	UnregisteredHypercam2Config provideConfig(ConfigManager configManager) {
+		return configManager.getConfig(UnregisteredHypercam2Config.class);
 	}
 	
 	@Override

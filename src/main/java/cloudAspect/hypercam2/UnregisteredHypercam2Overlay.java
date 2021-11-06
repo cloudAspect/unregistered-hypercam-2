@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.hypercam;
+package cloudAspect.hypercam2;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -16,16 +16,16 @@ import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
 import net.runelite.client.util.ImageUtil;
 
-class HypercamOverlay extends Overlay {
+class UnregisteredHypercam2Overlay extends Overlay {
 	
 	private Client client;
 	
 	private BufferedImage image;
 	
-	private final HypercamConfig config;
+	private final UnregisteredHypercam2Config config;
 	
 	@Inject
-	private HypercamOverlay(Client client, HypercamConfig config) {
+	private UnregisteredHypercam2Overlay(Client client, UnregisteredHypercam2Config config) {
 		setPosition(OverlayPosition.DYNAMIC);
 		setLayer(OverlayLayer.ALWAYS_ON_TOP);
 		this.config = config;
