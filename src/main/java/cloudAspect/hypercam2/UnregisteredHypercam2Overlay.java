@@ -16,13 +16,10 @@ class UnregisteredHypercam2Overlay extends Overlay {
 	
 	private BufferedImage image;
 	
-	private final UnregisteredHypercam2Config config;
-	
 	@Inject
-	private UnregisteredHypercam2Overlay(Client client, UnregisteredHypercam2Config config) {
+	private UnregisteredHypercam2Overlay(Client client) {
 		setPosition(OverlayPosition.DYNAMIC);
 		setLayer(OverlayLayer.ALWAYS_ON_TOP);
-		this.config = config;
 		this.client = client;
 		this.image = ImageUtil.loadImageResource(getClass(), "hypercam.png");
 	}
